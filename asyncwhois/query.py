@@ -157,7 +157,7 @@ class Query:
             # parse response for the referred WHOIS server name
             whois_server = self._find_match(regex, query_output)
             whois_server = whois_server.lower()
-            if whois_server and whois_server != server:
+            if whois_server and whois_server != "" and whois_server != server:
                 # recursive call to find the authoritative server
                 query_output = await self._aio_do_query(
                     whois_server, data, self.whois_server_regex
