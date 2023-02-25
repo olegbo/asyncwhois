@@ -157,6 +157,7 @@ class DomainParser:
             "pe": RegexPE(),
             "pl": RegexPL(),
             "pt": RegexPT(),
+            "xn--p1ai": RegexRF(),
             "rf": RegexRF(),
             "ro": RegexRO(),
             "ru": RegexRU(),
